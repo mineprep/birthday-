@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For Sevitha ❤️</title>
+<meta name="theme-color" content="#120812">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+:root{--bg:#0d080d;--rose:#ff6f91;--pink:#ffb3c6;--cream:#fff7f4;--muted:#cdbcc2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0,#3a1828 0,#160c14 38%,#0d080d 75%);color:var(--cream);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:55px 55px;opacity:.06}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 18px}
+.card{width:min(920px,100%);text-align:center}
+.kicker{letter-spacing:.24em;text-transform:uppercase;font-size:11px;color:#f5b7c8}
+h1,h2,.serif{font-family:"Cormorant Garamond",serif}
+h1{font-size:clamp(58px,14vw,126px);line-height:.82;margin:12px 0;color:#fff}
+h2{font-size:clamp(40px,8vw,70px);margin:0 0 12px}
+.subtitle{font-size:clamp(15px,3vw,20px);color:var(--muted);line-height:1.7;max-width:650px;margin:0 auto}
+.heart{font-size:40px;animation:pulse 1.8s infinite;display:inline-block}
+@keyframes pulse{50%{transform:scale(1.18)}}
+.btn{border:0;border-radius:999px;padding:14px 24px;background:linear-gradient(135deg,#ff6f91,#d94d78);color:white;font-weight:600;cursor:pointer;box-shadow:0 12px 35px #ff4f7728;margin-top:28px}
+.btn.ghost{background:#ffffff0d;border:1px solid #ffffff20}
+.count{display:flex;justify-content:center;gap:10px;margin:28px auto;flex-wrap:wrap}
+.unit{min-width:75px;padding:15px 12px;border:1px solid #ffffff16;border-radius:18px;background:#ffffff09;backdrop-filter:blur(10px)}
+.num{font-size:30px;font-weight:600}.label{font-size:10px;color:#bdaeb5;text-transform:uppercase;letter-spacing:.15em}
+.hidden{display:none}
+.reveal{animation:rise .8s ease both}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+.timeline{max-width:650px;margin:30px auto;text-align:left}
+.event{border-left:1px solid #ff789522;padding:0 0 30px 28px;position:relative}
+.event:before{content:"";position:absolute;left:-6px;top:5px;width:11px;height:11px;border-radius:50%;background:#ff7892;box-shadow:0 0 18px #ff7892}
+.date{font-size:11px;letter-spacing:.18em;color:#ff9bb1;text-transform:uppercase}.event h3{font-family:"Cormorant Garamond";font-size:30px;margin:5px 0}.event p{color:var(--muted);line-height:1.7;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px 0}
+.photo{aspect-ratio:1/1;overflow:hidden;border-radius:18px;background:#24131d;cursor:pointer}.photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.photo:hover img{transform:scale(1.05)}
+.photo.tall{grid-row:span 2;aspect-ratio:auto}
+.note{font-family:"Cormorant Garamond";font-size:25px;line-height:1.45;color:#ffe8ee;max-width:700px;margin:25px auto}
+.letter{background:linear-gradient(145deg,#ffffff0d,#ffffff05);border:1px solid #ffffff18;border-radius:28px;padding:34px 25px;max-width:720px;margin:25px auto;text-align:left;box-shadow:0 20px 80px #0006}
+.letter p{line-height:1.85;color:#eadde1;margin:0 0 16px}.sign{font-family:"Cormorant Garamond";font-size:30px;color:#fff}
+.final{padding-bottom:100px}
+.float{position:fixed;bottom:-30px;font-size:20px;opacity:.6;animation:float 7s linear infinite;pointer-events:none}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.lightbox{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.lightbox.show{display:flex}.lightbox img{max-width:95vw;max-height:90vh;border-radius:18px;object-fit:contain}.close{position:fixed;right:20px;top:15px;font-size:32px;cursor:pointer}
+@media(max-width:650px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery .photo.tall{grid-row:span 1}.page{padding:55px 16px}.letter{padding:26px 20px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+
+<section class="page" id="home">
+<div class="card">
+<div class="heart">♡</div>
+<div class="kicker">A little something for</div>
+<h1>Sevitha</h1>
+<p class="subtitle">Hey Ammu... I made this just for you.<br>Don't rush. Go through everything. ❤️</p>
+<div class="count" id="count">
+  <div class="unit"><div class="num" id="d">--</div><div class="label">Days</div></div>
+  <div class="unit"><div class="num" id="h">--</div><div class="label">Hours</div></div>
+  <div class="unit"><div class="num" id="m">--</div><div class="label">Minutes</div></div>
+  <div class="unit"><div class="num" id="s">--</div><div class="label">Seconds</div></div>
+</div>
+<button class="btn" onclick="document.getElementById('story').scrollIntoView()">Open your surprise ↓</button>
+</div>
+</section>
+
+<section class="page" id="story">
+<div class="card reveal">
+<div class="kicker">Our little story</div>
+<h2>It started with you.</h2>
+<div class="timeline">
+<div class="event">
+<div class="date">15 June 2025</div>
+<h3>The day I met you ❤️</h3>
+<p>I didn't know that this date would become one of those dates I'd always want to remember.</p>
+</div>
+<div class="event">
+<div class="date">3 July 2025</div>
+<h3>Our first outing 🥹</h3>
+<p>Our first little outing. And somehow, one memory became many more.</p>
+</div>
+</div>
+<button class="btn ghost" onclick="document.getElementById('memories').scrollIntoView()">Show me our memories →</button>
+</div>
+</section>
+
+<section class="page" id="memories">
+<div class="card reveal">
+<div class="kicker">Photos I never want to lose</div>
+<h2>Our memories 📸</h2>
+<p class="subtitle">Some old. Some new. Some silly. Some really special. Just us.</p>
+<div class="gallery" id="gallery"></div>
+<p class="note">“I may not remember every little detail… but I remember how it feels to have you in my life.”</p>
+<button class="btn" onclick="document.getElementById('letter').scrollIntoView()">One more thing ↓</button>
+</div>
+</section>
+
+<section class="page" id="letter">
+<div class="card reveal">
+<div class="kicker">From Prasanth</div>
+<h2>Hey Pondati ❤️</h2>
+<div class="letter">
+<p>Ammu,</p>
+<p>I don't know how to write all this in some perfect way. So I'll just say it like I would tell you.</p>
+<p>From <b>15 June 2025</b>, so many small things became memories for me. Our first outing on <b>3 July</b>, our photos, our silly moments, and all those little things that only we understand.</p>
+<p>Sometimes we fight. Sometimes we annoy each other. Sometimes I don't say things properly. But even after all that, you're still the person I want to talk to.</p>
+<p>You're my Ammu, my Chellam, my Darling, my Pondati... and honestly, my favourite person. ❤️</p>
+<p>So on your birthday, I just want you to know one simple thing:</p>
+<p><b>I’m really happy that I met you.</b></p>
+<p class="sign">Happy Birthday, Sevitha ❤️<br>— Prasanth</p>
+</div>
+<button class="btn" onclick="document.getElementById('final').scrollIntoView()">Wait... there's more 🎁</button>
+</div>
+</section>
+
+<section class="page final" id="final">
+<div class="card reveal">
+<div class="heart">♥</div>
+<div class="kicker">October 5, 2026</div>
+<h2>Happy Birthday, Ammu 🎂</h2>
+<p class="note">My Chellam. My Darling. My Pondati. ❤️</p>
+<p class="subtitle">Whatever happens, whatever silly fights we have, and however many memories we make next... I just want more of them with you.</p>
+<p style="margin-top:35px;color:#ffb3c6">Love you, Sevitha. ❤️</p>
+<p style="color:#8f7f87;font-size:12px">Made with love by Prasanth</p>
+</div>
+</section>
+
+<div class="lightbox" id="lightbox" onclick="this.classList.remove('show')">
+<span class="close">×</span><img id="lightboxImg" src="" alt="Memory">
+</div>
+
+<script>
+const target=new Date("2026-10-05T00:00:00+05:30").getTime();
+function tick(){
+ let x=Math.max(0,target-Date.now());
+ let d=Math.floor(x/86400000);x%=86400000;
+ let h=Math.floor(x/3600000);x%=3600000;
+ let m=Math.floor(x/60000);let s=Math.floor(x/1000)%60;
+ document.getElementById('d').textContent=d;
+ document.getElementById('h').textContent=String(h).padStart(2,'0');
+ document.getElementById('m').textContent=String(m).padStart(2,'0');
+ document.getElementById('s').textContent=String(s).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+
+const files=[
+"memory-01.jpg","memory-02.jpg","memory-03.jpg","memory-04.jpg","memory-05.jpg",
+"memory-06.jpg","memory-07.jpg","memory-08.jpg","memory-09.jpg","memory-10.webp",
+"memory-11.jpg","memory-12.jpg","memory-13.jpg","memory-14.jpg","memory-15.jpg",
+"memory-16.jpg","memory-17.jpg"
+];
+const gallery=document.getElementById('gallery');
+files.forEach((f,i)=>{
+ const d=document.createElement('div');d.className='photo '+([0,2,5,9].includes(i)?'tall':'');
+ const im=document.createElement('img');im.loading=i<6?'eager':'lazy';im.src='photos/'+f;im.alt='Our memory '+(i+1);
+ d.appendChild(im);d.onclick=()=>{document.getElementById('lightboxImg').src=im.src;document.getElementById('lightbox').classList.add('show')};
+ gallery.appendChild(d);
+});
+function heart(){
+ const e=document.createElement('div');e.className='float';e.textContent=['♥','♡','✦','❤'][Math.floor(Math.random()*4)];
+ e.style.left=Math.random()*100+'vw';e.style.animationDuration=(5+Math.random()*5)+'s';
+ document.body.appendChild(e);setTimeout(()=>e.remove(),10000);
+}
+setInterval(heart,900);
+</script>
+</body>
+</html>
